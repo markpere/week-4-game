@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector!</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+<audio src="assets/images/38 Hyrule Field Main Theme.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="hurt" src="assets/images/OOT_AdultLink_Hurt2.wav"></audio>
+<audio id="fanfare" src="assets/images/OOT_Fanfare_Item.wav"></audio>
+<audio id="rupee" src="assets/images/OOT_Get_Rupee.wav"></audio>
+</head>
+<body>
+<div class="container">
+	<div>
+		<div class="row">
+			<div class="col-sm-4" id="title">
+				<h1>Crystals Collector!</h1>
+			</div>
+		</div>		
+	</div>	
+	<div>
+		<div class="row">
+			<div class="col-sm-6" id="instructions">
+				<p><strong>You will be given a random number at the start of the game.</strong></p>
+				<p><strong>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</strong></p>
+				<p><strong>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</strong></p>
+				<p><strong>The value of each crystal is hidden from you until you click on it.</strong></p>
+				<p><strong>Each time the game starts, the values associated with each crystal will change as well.</strong></p>
+
+			</div>
+
+		</div>
+	</div>
+	<div>
+		<div class="row">
+			<div class="col-sm-3" id="randomNumberText">
+				<h3>Random Number:</h3>
+				<h3 id="randomNumber"></h3>
+			</div>
+			<div class="col-sm-2" id="statusText">
+				<p id="status"></p>
+				<p id="wins">Wins:</p>
+				<p id="losses">Losses:</p>
+			</div>
+		</div>
+
+	</div>
+	<div>
+		<div class="row" id="crystals">
+			<div class="col-sm-1" id="crystalOne">
+				<img src="assets/images/RedRupee.png" />
+				
+			</div>
+			<div class="col-sm-1" id="crystalTwo">
+				<img src="assets/images/BlueRupee.png" />
+			</div>
+			<div class="col-sm-1" id="crystalThree">
+				<img src="assets/images/GreenRupee.png" />
+				
+			</div>
+			<div class="col-sm-1" id="crystalFour">
+				<img src="assets/images/PurpleRupeeReal.png" />
+				
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="row">
+			<div class="col-sm-6" id="score">
+				<p>Your total score is:</p><p id="newScore"></p>
+			</div>
+		</div>
+	</div>
+	
+
+			
+</div>
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
