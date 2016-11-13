@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var valueCrystalTwo = Math.floor(Math.random()*12) + 1;
 	var valueCrystalThree = Math.floor(Math.random()*12) + 1;
 	var valueCrystalFour = Math.floor(Math.random()*12) + 1; 
-	$("#randomNumber").html(random);
+	$("#random").html(random);
 
 
 console.log (valueCrystalOne);
@@ -18,8 +18,8 @@ console.log (valueCrystalFour);
 
 function reset() {
 	var newRandomNumber = Math.floor(Math.random()*120) + 19;
-	$("#randomNumber").html(newRandomNumber);
-	randomNumber = newRandomNumber;
+	$("#random").html(newRandomNumber);
+	random = newRandomNumber;
 	calculatedScore = 0;
 	$("#newScore").html(calculatedScore);
 	valueCrystalOne = Math.floor(Math.random()*12) + 1;
